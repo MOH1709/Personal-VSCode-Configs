@@ -1,0 +1,52 @@
+{
+  "Add line comment": {
+    "prefix": "//-",
+    "body": ["//-----------------------------------------------> $1"],
+    "description": "add line comment"
+  },
+  "react native function component": {
+    "prefix": "rnfc",
+    "body": [
+      "import { View, Text, StyleSheet } from \"react-native\";",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <View style={styles.container}>",
+      "      <Text>${1:${TM_FILENAME_BASE}}</Text>",
+      "    </View>",
+      "  );",
+      "}",
+      "",
+      "//------------------------------------------> custom styles",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "  },",
+      "});"
+    ],
+    "description": "add custom react native function component"
+  },
+  "react style component": {
+    "prefix": "rfsc",
+    "body": [
+      "import { makeStyles } from \"@material-ui/core\";",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "    const styles = useStyles();",
+      "",
+      "    return (",
+      "      <div className={styles.container}>",
+      "        ${1:${TM_FILENAME_BASE}}",
+      "      </div>",
+      "    );",
+      "  }",
+      "",
+      "  //------------------------------------------->custom styles",
+      "  const useStyles = makeStyles({",
+      "    container: {",
+      "    },",
+      "  });"
+    ],
+    "description": "add custom react function component"
+  }
+}

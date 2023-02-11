@@ -1,0 +1,81 @@
+{
+  "next tsx layout component": {
+    "prefix": "layout",
+    "body": [
+      "export default function ${1:${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}}Layout({",
+      "\tchildren,",
+      "}: {",
+      "\tchildren: React.ReactNode",
+      "}) {",
+      "\treturn (",
+      "\t\t<main>",
+      "\t\t\t{/* <head /> */}",
+      "\t\t\t{children}",
+      "\t\t</main>",
+      "\t)",
+      "}"
+    ],
+    "description": "Next Layout Component"
+  },
+  "next ssr page": {
+    "prefix": "page",
+    "body": [
+      "import { useRouter } from \"next/navigation\"",
+      "",
+      "export default function ${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}(): JSX.Element {",
+      "\tconst router = useRouter();",
+      "",
+      "\treturn (",
+      "\t\t<section>",
+      "\t\t\t<p>${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}</p>",
+      "\t\t</section>",
+      "\t);",
+      "}"
+    ],
+    "description": "Next Server Side Rendered Page"
+  },
+  "next ssr component": {
+    "prefix": "ssc",
+    "body": [
+      "",
+      "interface Props {",
+      "",
+      "}",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}({}: Props): JSX.Element {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t<p>${1:${TM_FILENAME_BASE}}</p>",
+      "\t\t</div>",
+      "\t);",
+      "}"
+    ],
+    "description": "Next Server Side Rendered Component"
+  },
+  "next csr component": {
+    "prefix": "csc",
+    "body": [
+      "\"use client\";",
+      "",
+      "import { connect } from \"react-redux\";",
+      "",
+      "interface Props {",
+      "",
+      "}",
+      "",
+      "function ${1:${TM_FILENAME_BASE}}({}: Props): JSX.Element {",
+      "\treturn (",
+      "\t\t<div>",
+      "\t\t\t<p>${1:${TM_FILENAME_BASE}}</p>",
+      "\t\t</div>",
+      "\t);",
+      "}",
+      "",
+      "const mapStateToProps = (state: any) => ({",
+      "});",
+      "",
+      "export default connect(mapStateToProps, { })(${1:${TM_FILENAME_BASE}})"
+    ],
+    "description": "Next Client Side Rendered Component"
+  }
+}

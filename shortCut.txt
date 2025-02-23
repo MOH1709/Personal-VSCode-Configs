@@ -1,7 +1,0 @@
-* go to file : "alt + o"
-* run code : "ctrl + shift + r"
-* copy line up: "ctrl + up"
-* copy line down: "ctrl + down"
-* Toggle sideBar visibility: "ctrl + shift + z"
-
-* git push : "ctrl + shift + up"

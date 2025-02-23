@@ -1,7 +1,0 @@
-* Prettier
-* Material Icon Theme
-* Code Runner
-* Bearded Theme
-* REST Client
-* Auto Close Tag
-* Auto Complete Tag

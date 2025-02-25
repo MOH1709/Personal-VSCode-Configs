@@ -12,4 +12,6 @@ code --install-extension eamodio.gitlens --force &&
 code --install-extension wix.vscode-import-cost --force &&
 code --install-extension pkief.material-icon-theme --force &&
 code --install-extension esbenp.prettier-vscode --force &&
-code --install-extension ms-vscode-remote.remote-ssh --force
+code --install-extension ms-vscode-remote.remote-ssh --force &&
+code --install-extension  prisma.prisma --force &&
+code --install-extension  orta.vscode-jest --force 

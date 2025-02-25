@@ -11,6 +11,10 @@
   "editor.fontFamily": "Cascadia Code PL, Fira Code, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "errorLens.exclude": ["Unknown Word"],
+  "jest.runMode": "on-demand",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   "better-comments.tags": [
     {
       "tag": "!",

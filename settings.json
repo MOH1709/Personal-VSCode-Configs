@@ -1,5 +1,5 @@
 {
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "top",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Bearded Theme Black & Diamond",
   "editor.formatOnSave": true,
@@ -12,8 +12,13 @@
   "editor.fontLigatures": true,
   "errorLens.exclude": ["Unknown Word"],
   "jest.runMode": "on-demand",
+  "explorer.confirmPasteNative": false,
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "files.exclude": {
+    "**/node_modules": true
   },
   "better-comments.tags": [
     {

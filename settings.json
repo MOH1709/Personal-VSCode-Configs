@@ -8,7 +8,7 @@
   "editor.fontSize": 16,
   "editor.wordWrap": "on",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "Cascadia Code PL, Fira Code, 'Courier New', monospace",
+  "editor.fontFamily": "Cascadia Code Light, Fira Code, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "errorLens.exclude": ["Unknown Word"],
   "jest.runMode": "on-demand",
